@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Login</title>
+<style>
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#E6E6FA;
+    color:#FFF9E6;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .card{
+    background:rgba(255,255,255,0.18);
+    border:1px solid #4B3869;
+    border-radius:4px;
+    padding:28px;
+    width:320px;
+  }
+  h1{ color:#4B3869; margin:0 0 16px; }
+  label{ display:block; color:#4B3869; font-weight:bold; margin-bottom:4px; }
+  input{
+    width:100%;
+    padding:10px;
+    margin-bottom:16px;
+    font-family:inherit;
+    border:1px solid #4B3869;
+    border-radius:3px;
+    background:#FFF9E6;
+    color:#2a1f38;
+  }
+  button{
+    width:100%;
+    padding:12px;
+    background:#4B3869;
+    color:#FFF9E6;
+    border:none;
+    border-radius:3px;
+    font-family:inherit;
+    font-size:1rem;
+    cursor:pointer;
+  }
+  .msg{ margin-top:10px; color:#ffb3b3; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome</h1>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username">
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password">
+      <button type="submit">Log In</button>
+    </form>
+    <div id="msg" class="msg"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
